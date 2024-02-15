@@ -12,7 +12,7 @@ Build-Type: Simple
 Category: Utility
 License:             MIT
 License-file:        LICENSE
-Cabal-Version: >= 1.6
+Cabal-Version: >= 1.8
 Source-repository head
   type:     git
   location: git@github.com:danchoi/herbalizer.git
@@ -25,7 +25,7 @@ Executable herbalizer
     base >= 4 && < 5, 
     ghc-prim,
     parsec,
-    indents,
+    indents <= 0.3.3,
     containers,
     regex-posix,
     mtl

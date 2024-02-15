@@ -1,4 +1,5 @@
 {-# LANGUAGE DoAndIfThenElse #-}
+{-# Language FlexibleContexts #-}
 module Main where
 import Control.Applicative ((<$>), (<*>), (<*), (<$))
 import Control.Monad (liftM)
@@ -414,7 +415,7 @@ topLevelItem = do
     return $ as ++ "\n" ++ concat xs
 
 parseTopLevels s =
-    case (runIndentParser id topLevelsParser1 s) of
+    case (Main.runIndentParser id topLevelsParser1 s) of
       Left err -> putStrLn (show err)
       Right chunks -> do
         case (mapEithers parse1 chunks) of
