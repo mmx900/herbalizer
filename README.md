@@ -30,7 +30,7 @@ for HAML markup without incorporating a full-blown Ruby parser.
 
 The GHC Platform, unless you're using a precompiled binary.
 
-* [How to install GHC on OS X](http://justtesting.org/using-the-glasgow-haskell-compiler-ghc-on-os)
+* [How to install GHC on OS X](https://justtesting.org/post/21491940475/using-the-glasgow-haskell-compiler-ghc-on-os-x)
 
 ## Install
 
