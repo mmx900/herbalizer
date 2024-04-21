@@ -4,6 +4,14 @@ A HAML to ERB translator, written in Haskell.
 
 This program converts [HAML](http://haml.info/) templates to [ERB](http://www.stuartellis.eu/articles/erb/).
 
+If you are familiar with Docker, You can build the image using the dockerfile on this repository. And then you can use it without installing Cabal like : 
+
+```bash
+docker run --rm -i herbalizer < test.haml
+```
+
+See also : https://github.com/danchoi/herbalizer/issues/9#issuecomment-1960650419
+
 ## Why
 
 A lot of people prefer HAML to ERB. But not everyone, and not for every
